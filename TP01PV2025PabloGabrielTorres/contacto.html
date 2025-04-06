@@ -28,8 +28,8 @@
                     <label for="pais">País:</label>
                     <input type="text" id="pais" required><br>
 
-                    <label for="empresa">Teléfono:</label>
-                    <input type="number" id="teléfono" placeholder="*Campo Obligatorio" required><br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" id="telefono" placeholder="*Campo Obligatorio" required><br>
 
                     <label for="email">Correo Electronico:</label>
                     <input type="email" id="email" placeholder="*Campo Obligatorio" required><br>
@@ -38,7 +38,7 @@
                     <input type="text" id="empresa" placeholder="*Campo Obligatorio" required><br>
 
                     <textarea name="Mensaje :" id="mensaje" placeholder="Ingresa tu mensaje" rows="6" cols="60"></textarea><br>
-                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="submit" onclick="enviarFormulario()" id="enviar">Enviar </button>
                 </form>
             </div>
         </section>
@@ -48,5 +48,34 @@
     <footer class="pie">
         <p>© 2025 Cultura de Noruega. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        //Funcion que se ejecuta cuando se hace clic en el boton
+        function enviarFormulario(){
+            //evita que el formulario se envie y la pagina se recargue
+            event.preventDefault();
+    
+            //obtener los valores
+            var nombre=document.getElementById("nombre").value;
+            var apellido=document.getElementById("apellido").value;
+            var pais=document.getElementById("pais").value;
+            var telefono=document.getElementById("telefono").value;
+            var email=document.getElementById("email").value;
+            var empresa=document.getElementById("empresa").value;
+            var mensaje=document.getElementById("mensaje").value;
+    
+    
+            //mostrar los valores en la consola
+            console.log("Nombre: ", nombre);
+            console.log("Apellido: ", apellido);
+            console.log("Pais: ", pais);
+            console.log("Telefono: ", telefono);
+            console.log("Email: ", email);
+            console.log("Empresa: ", empresa);
+            console.log("Mensaje: ", mensaje);
+    
+    
+            alert("Nombre: "+nombre+" Apellido: "+apellido+" Pais: " +pais+"Teléfono: "+telefono+"Email: "+email+"Empresa: "+empresa);
+        }
+    </script>
 </body>
 </html>
