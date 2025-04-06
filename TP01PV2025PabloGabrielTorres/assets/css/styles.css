@@ -23,6 +23,16 @@ body{
 .navegacion a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+a {
+    color: #EAEAEA;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+}
 .encabezado, .navegacion, .pie {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
