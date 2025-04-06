@@ -92,10 +92,14 @@ form {
 input, textarea, button {
     margin: 5px 0;
     padding: 10px;
+    border-radius: 5px;
+    border: none;
 }
 button {
-    background: #333;
+    background: #007BFF;
     color: white;
-    border: none;
     cursor: pointer;
+}
+button:hover {
+    background: #5DADE2;
 }
